@@ -1,0 +1,6 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #102a43; background: #f0f7f4; }
+body { margin: 0; display: grid; min-height: 100vh; place-items: center; }
+main { max-width: 38rem; padding: 3rem; }
+.eyebrow { color: #16856d; font-weight: 700; letter-spacing: .12em; }
+h1 { font-size: clamp(2.8rem, 8vw, 5rem); line-height: 1; margin: .25rem 0 1rem; }
+button { background: #16856d; border: 0; border-radius: .5rem; color: white; cursor: pointer; font: inherit; margin-top: 1rem; padding: .8rem 1.2rem; }

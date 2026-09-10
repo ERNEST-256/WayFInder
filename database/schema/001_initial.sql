@@ -1,0 +1,2 @@
+CREATE TABLE users (id UUID PRIMARY KEY, email TEXT UNIQUE NOT NULL, created_at TIMESTAMPTZ NOT NULL DEFAULT now());
+CREATE TABLE trips (id UUID PRIMARY KEY, user_id UUID REFERENCES users(id), destination TEXT NOT NULL, start_date DATE NOT NULL, end_date DATE NOT NULL, created_at TIMESTAMPTZ NOT NULL DEFAULT now());
