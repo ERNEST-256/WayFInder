@@ -1,0 +1,11 @@
+openapi: 3.0.3
+info: { title: WayFinder API, version: 0.1.0 }
+paths:
+  /api/health:
+    get:
+      responses: { '200': { description: Service is healthy } }
+  /api/trips:
+    get:
+      responses: { '200': { description: List trips } }
+    post:
+      responses: { '201': { description: Trip created }, '400': { description: Invalid request } }
