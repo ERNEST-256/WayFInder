@@ -7,7 +7,7 @@ import { env } from "./config/env";
 const app = express();
 
 app.use(express.json({"limit": "30kb"}));
-app.use(cookieParser());
+app.use(cookieParser())
 app.use(express.urlencoded({ extended: true }));
 
 app.use(
